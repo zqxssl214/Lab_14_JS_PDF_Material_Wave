@@ -71,7 +71,7 @@ class ResumeApp {
         return;
       }
   
-      const html = '<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Резюме</title><link rel="stylesheet" href="css/style.css"><style>body{background:white;padding:20px}.download-btn{display:none!important}.editable{border:none!important;padding:0!important;background:none!important}.resume-section{overflow:visible}@media print{@page{margin:15mm;size:A4}body{margin:0}.container{max-width:100%!important;padding:0}}</style></head><body><div class="container"><div class="resume">' + this.resume.innerHTML + '</div></div></body></html>';
+      const html = '<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Резюме</title><link rel="stylesheet" href="css/style.css"><style>body{background:white;padding:20px}.download-btn{display:none}.editable{border:none!important;padding:0!important}@media print{body{margin:0}.container{max-width:100%}}</style></head><body><div class="container"><div class="resume-grid">' + this.resume.innerHTML + '</div></div></body></html>';
   
       printWindow.document.write(html);
       printWindow.document.close();

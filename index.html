@@ -10,46 +10,94 @@
   <div class="container">
     <button class="download-btn material-wave" id="downloadBtn">Скачать PDF</button>
 
-    <div class="resume" id="resume">
-      <header class="resume-header">
-        <div>
-          <h1 class="editable" contenteditable="true" data-field="name">Челнаков Андрей</h1>
-          <p class="editable" contenteditable="true" data-field="profession">Студент 1 курса группы ИКС 09.03.01 ПОСМС</p>
-        </div>
-        <div class="contact-info">
+    <div class="resume-grid" id="resume">
+
+      <div class="column-left">
+        <section class="card profile-card">
+          <div class="profile-img">
+            <img src="/images/d02d3f91c95612e2d85bace957d6e29c.jpg" alt="Фото">
+          </div>
+          <div class="header-text">
+            <span class="greeting">Привет, я</span>
+            <h1 class="editable" contenteditable="true" data-field="name">Челнаков Андрей</h1>
+            <p class="editable profession" contenteditable="true" data-field="profession">Студент ИКС 09.03.01</p>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Образование</h2>
+          <div class="edu-item accent-green">
+            <span class="year">2026-2030</span>
+            <h3 class="editable" contenteditable="true" data-field="edu-uni">СибГУТИ</h3>
+            <p class="editable" contenteditable="true" data-field="edu-spec">ПОСМС</p>
+          </div>
+          <div class="edu-item">
+            <span class="year">2024</span>
+            <h3 class="editable" contenteditable="true" data-field="edu-courses">Курсы</h3>
+            <p class="editable" contenteditable="true" data-field="edu-courses-desc">Основы программирования</p>
+          </div>
+        </section>
+
+        <section class="card tools-card">
+          <h2>Инструменты</h2>
+          <div class="tools-grid">
+            <div class="tool-icon"><span class="editable" contenteditable="true" data-field="tool1">HTML</span></div>
+            <div class="tool-icon"><span class="editable" contenteditable="true" data-field="tool2">CSS</span></div>
+            <div class="tool-icon"><span class="editable" contenteditable="true" data-field="tool3">JS</span></div>
+            <div class="tool-icon"><span class="editable" contenteditable="true" data-field="tool4">Git</span></div>
+            <div class="tool-icon"><span class="editable" contenteditable="true" data-field="tool5">Vite</span></div>
+            <div class="tool-icon"><span class="editable" contenteditable="true" data-field="tool6">npm</span></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="column-right">
+        <section class="card languages-card">
+          <h2>Языки</h2>
+          <div class="lang-item">
+            <span class="editable" contenteditable="true" data-field="lang1-name">Русский</span>
+            <div class="progress"><div class="bar" style="width: 100%"></div></div>
+          </div>
+          <div class="lang-item">
+            <span class="editable" contenteditable="true" data-field="lang2-name">Английский</span>
+            <div class="progress"><div class="bar" style="width: 40%"></div></div>
+          </div>
+        </section>
+
+        <section class="card tags-card">
+          <h2>Интересы</h2>
+          <div class="tags-container">
+            <span class="tag editable" contenteditable="true" data-field="interest1">Разработка</span>
+            <span class="tag editable" contenteditable="true" data-field="interest2">Сети</span>
+            <span class="tag editable" contenteditable="true" data-field="interest3">Дизайн</span>
+            <span class="tag editable" contenteditable="true" data-field="interest4">Базы данных</span>
+          </div>
+        </section>
+
+        <section class="card experience-card">
+          <h2>Опыт</h2>
+          <div class="exp-item accent-green">
+            <span class="date">2025 - сейчас</span>
+            <h3 class="editable" contenteditable="true" data-field="exp1-title">Учебные проекты</h3>
+            <p class="editable" contenteditable="true" data-field="exp1-desc">Активное изучение веб-технологий, создание сайтов.</p>
+          </div>
+          <div class="exp-item">
+            <span class="date">2026</span>
+            <h3 class="editable" contenteditable="true" data-field="exp2-title">Лабораторные работы</h3>
+            <p class="editable" contenteditable="true" data-field="exp2-desc">Выполнение работ по HTML, CSS, JavaScript.</p>
+          </div>
+        </section>
+
+        <section class="card dark-card">
+          <h2>Связаться</h2>
           <p class="editable" contenteditable="true" data-field="email">andro@example.com</p>
-          <p class="editable" contenteditable="true" data-field="phone">+7000000000</p>
+          <p class="editable" contenteditable="true" data-field="phone">+7 000 000 00 00</p>
           <p class="editable" contenteditable="true" data-field="location">Новосибирск, Россия</p>
-        </div>
-      </header>
+        </section>
+      </div>
 
-      <section class="resume-section material-wave">
-        <h2>О себе</h2>
-        <p class="editable" contenteditable="true" data-field="about">Обучаюсь на 1 курсе</p>
-      </section>
-
-      <section class="resume-section material-wave">
-        <h2>Опыт работы</h2>
-        <p class="editable" contenteditable="true" data-field="exp">Отсутствует</p>
-      </section>
-
-      <section class="resume-section material-wave">
-        <h2>Образование</h2>
-        <p class="editable" contenteditable="true" data-field="edu-title">Отсутствует</p>
-        <p class="editable" contenteditable="true" data-field="edu-uni">СибГУТИ</p>
-        <p class="editable" contenteditable="true" data-field="edu-period">2026-2030</p>
-      </section>
-
-      <section class="resume-section material-wave">
-        <h2>Навыки</h2>
-        <ul class="skills-list">
-          <li class="editable" contenteditable="true" data-field="skill1">Потихоньку-помаленьку</li>
-          <li class="editable" contenteditable="true" data-field="skill2">Двигаюсь четенько</li>
-        </ul>
-      </section>
     </div>
   </div>
-
   <script src="js/resume.js"></script>
 </body>
 </html>
