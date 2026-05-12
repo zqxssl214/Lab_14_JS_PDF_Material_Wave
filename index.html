@@ -1,13 +1,56 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме - Челнаков Андрей</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="download-btn material-wave" id="downloadBtn">Скачать PDF</button>
+
+    <div class="resume" id="resume">
+      <header class="resume-header">
+        <div>
+          <h1 class="editable" contenteditable="true" data-field="name">Челнаков Андрей</h1>
+          <p class="editable" contenteditable="true" data-field="profession">Студент 1 курса группы ИКС 09.03.01 ПОСМС</p>
+        </div>
+        <div class="contact-info">
+          <p class="editable" contenteditable="true" data-field="email">andro@example.com</p>
+          <p class="editable" contenteditable="true" data-field="phone">+7000000000</p>
+          <p class="editable" contenteditable="true" data-field="location">Новосибирск, Россия</p>
+        </div>
+      </header>
+
+      <section class="resume-section material-wave">
+        <h2>О себе</h2>
+        <p class="editable" contenteditable="true" data-field="about">Обучаюсь на 1 курсе</p>
+      </section>
+
+      <section class="resume-section material-wave">
+        <h2>Опыт работы</h2>
+        <p class="editable" contenteditable="true" data-field="exp">Отсутствует</p>
+      </section>
+
+      <section class="resume-section material-wave">
+        <h2>Образование</h2>
+        <p class="editable" contenteditable="true" data-field="edu-title">Отсутствует</p>
+        <p class="editable" contenteditable="true" data-field="edu-uni">СибГУТИ</p>
+        <p class="editable" contenteditable="true" data-field="edu-period">2026-2030</p>
+      </section>
+
+      <section class="resume-section material-wave">
+        <h2>Навыки</h2>
+        <ul class="skills-list">
+          <li class="editable" contenteditable="true" data-field="skill1">Потихоньку-помаленьку</li>
+          <li class="editable" contenteditable="true" data-field="skill2">Двигаюсь четенько</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="/js/resume.js"></script>
+</body>
 </html>
